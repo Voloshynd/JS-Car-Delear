@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Strona konfiguracji</title>
+</head>
+<body>
+    <div id ="container">
+        <div id="method-of-pay">
+            <form id="type-of-pay">
+                <div id="radio" onclick="resetRadioMassage()">
+                    <label  for="radio-leasing"><input type="radio" class="radio-input" name="type-of-pay" id="radio-leasing" value="1"/> Leasing </label>                   
+                    <label  for="radio-cash"><input type="radio" class="radio-input" name="type-of-pay" id="radio-cash" value="2"/> Gotówka</label> 
+                </div>
+            </form>
+            <div>
+                <p>Cena całkowita : <span id="totalPrice"><span><p>             
+                <p>Wybrane auto : <span id="selectedCar"></span> </p>
+            </div>
+        </div>
+        <section id="new-owner">
+            <div class="list-of-data">
+                <p>Imię i nazwisko: </p>
+                <p>Miejsce odbioru: </p>
+                <div>
+                    <p>Data odbioru:</p>
+                </div>
+                <span id="selected-date"></span>
+            </div>
+            <form id="private-data">
+                <div class="input">
+                    <input class="information" id="full-owner-name" type="text" placeholder="Imię Nazwisko" onclick="resetNameMassage()"/>
+                </div>
+                <div>
+                    <input class="information" id="city" type="text" placeholder="Miejscowość" onclick="resetCityMassage()"/>
+                </div>
+                <div id="date-picker">
+                    <select id="select-date-picker" onclick="resetDateMassage()">
+                        <input type="text" class="date" id="datepicker">
+                    </select>
+                </div>
+            </form>
+        </section>
+        <div id="select-accessories">
+            <h2 id="choose-accessories">Akcesoria</h2>
+            <div class="select-add not-active-add">
+                <div class="select-header-add">
+                    <span class="select-current-add">Dodaj akcesoria</span>
+                </div>
+                <button id="add-button"><i class="fas fa-plus"></i></button>
+                <div class="select-body-add">
+                    <ul id="aksessoryList">
+                        <li id="akcessory_1" class="select-add-item">Czujniki parkowania 600 PLN</li>
+                        <li id="akcessory_2" class="select-add-item">Opony zimowe 2000 PLN</li>
+                        <li id="akcessory_3" class="select-add-item">System nawigacyjny 260 PLN</li>
+                        <li id="akcessory_4" class="select-add-item">Dodatkowy rok gwarancji 5000 PLN</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="select-substract not-active-sub">
+                <div class="select-header-sub">
+                    <span class="select-current-sub">Usuń akcesoria</span>
+                </div>
+                <button id="minus-button"><i class="fas fa-minus"></i></button>
+                <div  id="select-body-sub">
+                    <ul id="remove-akcessory"></ul>
+                </div>
+            </div> 
+        </div>
+        <div id="footer">
+            <div class="back-to-main-page">
+               <p id="arrow"><b>‹</b> Powrót do wyboru</p>
+            </div>
+            <div id="massage"></div>
+            <form>
+                <button id="buy-button" >Zakup</button>
+            </form>
+        </div>  
+    </div>
+</body>
+</html>

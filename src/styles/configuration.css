@@ -1,0 +1,234 @@
+#method-of-pay{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+label{
+    font-weight: 600;
+}
+p{
+    font-weight: 600;
+    line-height: 1rem;
+}
+select{
+    height: 21px;
+    cursor: pointer;
+}
+#type-of-pay{
+    line-height: 32px;
+}
+#new-owner{   
+    padding-top: 70px; 
+    display: flex;  
+}
+#radio{
+    display: flex;
+    flex-direction: column;
+}
+#private-data {
+    line-height: 2.2rem;
+    margin-left: 40px;
+}
+.information{
+    background: none;
+    border: none;
+    color:#FFFFFF;
+    border-bottom: 1px solid #e0e0e0;
+    cursor: pointer;
+    text-transform: capitalize;  
+}
+.information:focus{
+    outline: none;
+}
+::placeholder{
+    color: lightgray;
+}
+#datepicker{
+    width: 80px;
+    margin-top: 5px;
+}
+#date-picker{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+#select-date-picker{
+    height: 21px;
+    width: 20px;
+    margin-top: 5px;
+    border-radius: 0%;
+}
+#select-accessories{
+    padding-top: 70px;
+    height:100%;
+}
+#choose-accessories{
+    margin-left: 5px;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.select-add{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.select-substract{
+    display: flex; 
+    position: relative; 
+    align-items: center;
+    bottom: -100px;
+}
+.select-add.not-active-add .select-body-add {
+    display: none;
+}
+.select-substract.not-active-sub #select-body-sub{
+    display: none;
+}
+.select-header-add{
+    width: 280px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    border: 2px solid #d84315;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.select-body-add{
+    max-width: 280px;
+    border: 2px solid #ccc;
+    border-top: 0;
+    border-radius: 0 0 5px;
+    box-sizing: border-box;
+    position: absolute;
+    top:100%;
+    margin-right: 45px;
+   
+}
+.select-add-item,.select-sub-item{
+    margin: 2px;
+    font-weight: 600;
+}
+i{
+    font-size: 1.2rem;
+}
+.select-header-sub{
+    width: 280px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    border: 2px solid #d84315;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+#select-body-sub{
+    width: 280px;
+    border: 2px solid #ccc;
+    border-top: 0;
+    border-radius: 0 0 5px;
+    box-sizing: border-box;
+    position: absolute;
+    top:100%;
+    margin-right: 45px;
+}
+
+#add-button, #minus-button {
+    width: 35px;
+    height: 35px;
+    border-radius:50%;
+    border: 2px solid #d84315;
+    font-size: 2rem;
+    margin-left: 10px;
+    color:#d84315;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+
+}
+#footer{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 90%; 
+}
+button{
+    width: 80px;
+    height: 30px;
+    border-radius: 4px;
+    border: 2px solid #d84315;
+    color: #d84315;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+#arrow{
+    font-size: 1rem;
+    cursor: pointer;
+}
+b{
+    font-size: 1.5rem; 
+}
+.invalid{
+	border-bottom: 1px solid #7f0000;
+}
+.current {
+    color: #006064;
+}
+@media only screen and (max-width: 550px){
+    label, p{
+        font-size: 0.8rem;
+    }
+    #arrow{
+        font-size: 0.9rem;
+    }
+    button{
+        width: 70px;
+        height: 30px;        
+    }
+} 
+@media only screen and (min-width: 750px){
+    .select-add-item:hover{
+        background-color: #d84315;
+        cursor: pointer;
+        transition: all 0.4s ease-in-out;
+    }
+    .select-sub-item:hover{
+        background-color: #d84315;
+        cursor: pointer;
+        transition: all 0.4s ease-in-out;
+    }
+    .select-header-add:hover{
+        background-color: #d84315;
+        color:white;
+        transition: all 0.4s ease-in-out;
+    }
+    .select-header-sub:hover{
+        background-color: #d84315;
+        color:white;
+        transition: all 0.4s ease-in-out;
+    }
+    #arrow:hover{
+        color: #d84315;
+        transition: all 0.4s ease-in-out;
+    }
+    button:hover{
+        background-color:#d84315;
+        color: #FFFFFF;
+    }
+    i:hover{
+        color: #FFFFFF;
+        transition: all 0.4s ease-in-out;
+    }
+}
